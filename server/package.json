@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "A toy server project to test TypeScript project splitting",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Prokopchuk",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6"
+  },
+  "_moduleAliases": {
+    "@": "dist/src"
+  }
+}

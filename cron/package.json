@@ -1,0 +1,20 @@
+{
+  "name": "cron",
+  "version": "1.0.0",
+  "description": "A cron project to test TypeScript project splitting",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Prokopchuk",
+  "license": "MIT",
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "moment": "^2.24.0"
+  },
+  "_moduleAliases": {
+    "@": "../server/dist/src"
+  }
+}
