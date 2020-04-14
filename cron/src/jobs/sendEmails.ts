@@ -1,6 +1,7 @@
-import UserModel from "@/models/UserModel"
+import UserModel from "@server/models/UserModel"
 
 export async function sendEmails () {
   const u = new UserModel()
-  console.log(u.name)
+
+  console.log(u.email)
 }

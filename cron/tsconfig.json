@@ -5,13 +5,13 @@
     "baseUrl": ".",
     "rootDir": ".",
     "paths": {
-      "@/*": [
+      "@server/*": [
         "../server/src/*"
       ],
     }
   },
   "references": [
-    { "path": "../server/tsconfig.json" }
+    { "path": "../server" }
   ],
   "include": [
     "src/**/*",
