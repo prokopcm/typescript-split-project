@@ -1,3 +1,4 @@
+import { lowerCase } from 'lodash'
 import { BaseModel } from "@/models/BaseModel"
 
 /** A model that represents a user in a system */
@@ -16,7 +17,7 @@ export default class UserModel extends BaseModel {
 
   toJSON () {
     return {
-      email: this.email,
+      email: lowerCase(this.email),
       name: this.name
     }
   }
