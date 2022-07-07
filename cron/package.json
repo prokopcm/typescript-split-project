@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "module-alias": "^2.2.2",
-    "moment": "^2.24.0"
+    "moment": "^2.29.4"
   },
   "_moduleAliases": {
     "@": "../server/dist/src",
